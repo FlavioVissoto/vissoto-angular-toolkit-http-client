@@ -1,8 +1,8 @@
 import { Observable, throwError } from 'rxjs';
 
 import { HttpClient } from '@angular/common/http';
-import { HttpMethod } from '../enums';
-import { HttpParameters } from '../interfaces';
+import { HttpMethod } from '../enums/http-method.enum';
+import { HttpParameters } from '../interfaces/http-parameters.interface';
 import { Injectable } from '@angular/core';
 import { httpMethodNotSupported } from './../message/messages';
 

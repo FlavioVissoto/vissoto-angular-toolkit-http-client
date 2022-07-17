@@ -3,7 +3,7 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 
-import { HttpMethod } from '../enums';
+import { HttpMethod } from '../enums/http-method.enum';
 import { HttpRequestClientServices } from './http-request.service';
 import { TestBed } from '@angular/core/testing';
 import { mockHttpParameters } from './../../../test/http-parameters.mock';

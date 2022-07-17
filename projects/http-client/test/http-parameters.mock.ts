@@ -1,4 +1,4 @@
-import { HttpParameters } from 'projects/http-client/src/lib/interfaces';
+import { HttpParameters } from '../src/lib/interfaces/http-parameters.interface';
 
 export const mockHttpParameters = {
   query1: 'valuQuery1',
