@@ -1,6 +1,6 @@
 {
-  "name": "@vissoto-angular-toolkit/http-client",
-  "version": "12.0.0",
+  "name": "@vissoto-angular/http-client",
+  "version": "12.0.1",
   "description": "Esse projeto foi criado para facilitar as consultas HTTP realizadas em projetos Angular.",
   "main": "index.js",
   "repository": {
