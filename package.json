@@ -1,5 +1,5 @@
 {
-  "name": "vissoto-angular-toolkit-http-client",
+  "name": "vissoto-angular-http-client",
   "version": "14.0.0",
   "scripts": {
     "ng": "ng",
