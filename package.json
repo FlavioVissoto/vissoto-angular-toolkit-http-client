@@ -1,6 +1,6 @@
 {
   "name": "vissoto-angular-toolkit-http-client",
-  "version": "0.0.0",
+  "version": "14.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,12 +13,6 @@
     "prepare": "husky install"
   },
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint && npm run test"
-    }
-  },
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",

@@ -4,15 +4,19 @@ import {
 } from '@angular/common/http/testing';
 
 import { HttpMethod } from '../enums/http-method.enum';
+import { HttpParameters } from '../interfaces/http-parameters.interface';
 import { HttpRequestClientServices } from './http-request.service';
 import { TestBed } from '@angular/core/testing';
-import { mockHttpParameters } from './../../../test/http-parameters.mock';
 
 describe('HttpRequestClientServices', () => {
   let service: HttpRequestClientServices;
   let httpMock: HttpTestingController;
 
   const dummyRequest = [{ test: 'value1' }, { test: 'value2' }];
+  const mockHttpParameters = {
+    query1: 'valuQuery1',
+    query2: 'valueQuery2',
+  } as HttpParameters;
 
   interface mockReturnHttp {
     test: string;

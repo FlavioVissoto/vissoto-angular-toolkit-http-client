@@ -33,7 +33,7 @@ const config: Config.InitialOptions = {
     },
     './**/*.ts': {
       branches: 90,
-      functions: 90,
+      functions: 80,
       lines: 90,
       statements: 90,
     },
