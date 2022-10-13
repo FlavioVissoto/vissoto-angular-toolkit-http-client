@@ -1,78 +1,27 @@
-# Componente Angular HTTP
+# VissotoAngularToolkitHttpClient
 
-<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=orange&style=for-the-badge" />
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
 
-> Versão 1.0.0 Componente node para requisições HTTP.
+## Development server
 
-## Instalação
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Instalar o componente **HTTP**
+## Code scaffolding
 
-```typescript
-npm i -D www
-```
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Funcionalidades disponíveis
+## Build
 
-|HttpRequestClientServices|  |
-|--|--|
-| `execute<T>(method: HttpMethod, path: string, headerParams?: HttpParameters, queryParams?: HttpParameters, bodyParams?: object)` | Constrói uma solicação HTTP de acordo com o tipo informado e retorna a resposta como o tipo de objeto informado. |
-|||
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Utilização
+## Running unit tests
 
-Para começar a usar o "Module HTTP" com Angular, siga as etapas abaixo:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-1. Adicione o modulo `HttpModule` no `imports` no arquivo `src/app/app.module.ts`:
+## Running end-to-end tests
 
-```typescript
-import { AppComponent } from './app.component';
-import { AuthorizeGard } from './guard/AuthorizeGuard';
-import { HttpModule } from '@angular-module/http';
-import { NgModule } from '@angular/core';
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-@NgModule({
-  declarations: [AppComponent],
-  imports: [HttpModule],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-```
+## Further help
 
-2. Injete a classe de serviço **HttpRequestClientServices** no construtor do componente que irá utilizar:
-
-```typescript
-import { HttpRequestClientServices } from '@angular-module/http';
-import { Injectable } from '@angular/core';
-
-@Injectable({providedIn: 'root'})
-export class ServiceClass {
-  constructor(private httpRequestClientServices: HttpRequestClientServices) {}
-}
-```
-
-3. Para realizar uma requisição, será necessário executar o método **execute** da classe **HttpRequestClientServices**. Esse método recebe alguns parâmetros, sendo os dois primeiros obrigatórios:
-
-- **@param method (_[HTTPMethod]()_)**: Tipo de metodo utilizado na reqisição.
-
-- **@param path (_string_)**: URL do endpoint para requisição.
-
-```typescript
-import { HttpRequestClientServices } from '@angular-module/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-
-@Injectable({providedIn: 'root'})
-export class ServiceClass {
-  constructor(private httpRequestClientServices: RequestServices) {}
-
-  todo(): Observable<any[]> {
-    return this.httpRequestClientServices.execute<any[]>(HttpMethod.Get, `/url`);
-  }
-}
-```
-#
-## Contribuidores
-<a href="https://github.com/FlavioVissoto/angular-http/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=FlavioVissoto/angular-http" />
-</a>
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
