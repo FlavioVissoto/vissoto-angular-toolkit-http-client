@@ -27,7 +27,8 @@ export class HttpRequestClientServices {
     path: string,
     headerParams?: HttpParameters,
     queryParams?: HttpParameters,
-    bodyParams?: object
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    bodyParams?: any
   ): Observable<T> {
     const options = {
       headers: {} as HttpParameters,

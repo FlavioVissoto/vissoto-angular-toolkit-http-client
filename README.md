@@ -9,7 +9,7 @@
 Instalar o componente **HTTP**
 
 ```typescript
-npm i -D www
+npm i -D @vissoto-angular/http-client
 ```
 
 ### Funcionalidades disponíveis
